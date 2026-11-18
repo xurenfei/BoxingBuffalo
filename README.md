@@ -12,6 +12,10 @@ BoxingBuffalo 是一个 macOS 原生应用，用来浏览和读写 Xbox 360 硬�
 
 支持只读挂载、文件上传、新建目录、删除、重命名。所有写操作都经过确认对话框，失败会自动回滚 FAT 表与目录项。
 
+## 下载
+
+预编译版本见 [Releases](https://github.com/xurenfei/BoxingBuffalo/releases/latest)。程序未公证，ad-hoc 签名，首次打开请右键点击 `BoxingBuffalo.app` 选「打开」。
+
 ## 功能
 
 - 扫描 USB 与内置磁盘，自动识别 FATX 分区与超级块
@@ -67,7 +71,7 @@ swift build -c release
 └── _local/                    本地私有资料，不入版本库
 ```
 
-`_local/` 存放不随仓库分发的内容，包括原版 Windows 程序（用于行为比对）和真盘 FAT 备份。它已被 `.gitignore` 排除。
+`_local/` 用于存放不随仓库分发的内容，包括原版 Windows 程序（用于行为比对）与真盘 FAT 备份。它已被 `.gitignore` 排除，仓库里不会出现。
 
 ## 技术要点
 
