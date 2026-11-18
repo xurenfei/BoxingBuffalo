@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+._*
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# 构建产物
+dist/
+
+# 本地私有资料，不随仓库分发
+_local/
+
+# 运行时日志与备份
+*.log
+*.bin
+
+# 编辑器
+.vscode/
+.idea/
+*.xcodeproj
+
+# 工具目录
+.workbuddy/
